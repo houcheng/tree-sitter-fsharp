@@ -2,7 +2,7 @@
 
 from importlib.resources import files as _files
 
-from ._binding import fsharp, signature
+from ._binding import language # fsharp, signature
 
 
 def _get_query(name, file):
@@ -12,22 +12,22 @@ def _get_query(name, file):
 
 
 def __getattr__(name):
-    if name == "HIGHLIGHTS_QUERY":
-        return _get_query("HIGHLIGHTS_QUERY", "highlights.scm")
-    if name == "LOCALS_QUERY":
-        return _get_query("LOCALS_QUERY", "locals.scm")
-    if name == "TAGS_QUERY":
-        return _get_query("TAGS_QUERY", "tags.scm")
+    # if name == "HIGHLIGHTS_QUERY":
+    #     return _get_query("HIGHLIGHTS_QUERY", "highlights.scm")
+    # if name == "LOCALS_QUERY":
+    #     return _get_query("LOCALS_QUERY", "locals.scm")
+    # if name == "TAGS_QUERY":
+    #     return _get_query("TAGS_QUERY", "tags.scm")
 
     raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
 
 
 __all__ = [
-    "fsharp",
-    "signature",
-    "HIGHLIGHTS_QUERY",
-    "LOCALS_QUERY",
-    "TAGS_QUERY",
+    "language",
+    # "signature",
+    # "HIGHLIGHTS_QUERY",
+    # "LOCALS_QUERY",
+    # "TAGS_QUERY",
 ]
 
 

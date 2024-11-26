@@ -37,8 +37,6 @@ setup(
                 "bindings/python/tree_sitter_fsharp/binding.c",
                 "fsharp/src/parser.c",
                 "fsharp/src/scanner.c",
-                "fsharp_signature/src/parser.c",
-                "fsharp_signature/src/scanner.c",
             ],
             extra_compile_args=(
                 [
