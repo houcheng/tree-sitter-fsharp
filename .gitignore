@@ -35,3 +35,5 @@ dsl.d.ts
 *.wasm
 *.obj
 *.o
+.aider*
+.env
